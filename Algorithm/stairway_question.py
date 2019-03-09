@@ -11,8 +11,12 @@ n = 5: F(5) = 8
 可以看出规律F(n) = F(n-1) + F(n-2)
 
 """
+from functools import lru_cache
+# 增加functools.lru_cache装饰器，主要用来做缓存，能把相对耗时的函数结果进行保存
+# 避免传入相同参数进行重复计算，缓存不会无限增长，不用的缓存会被释放
 
 
+@lru_cache(10**8)
 def method_count(n):
     if n == 1:
         return 1
@@ -23,5 +27,5 @@ def method_count(n):
 
 
 if __name__ == '__main__':
-    n = 36
-    print(method_count(n))
+    test_n = 99
+    print(method_count(test_n))
