@@ -30,8 +30,8 @@ def two_sum(nums, target):
 
 
 if __name__ == '__main__':
-    nums = [2, 7, 11, 15]
+    test_nums = [2, 7, 11, 15]
     # nums = [3, 3]
-    target = 9
+    test_target = 9
     # target = 6
-    print(two_sum(nums, target))
+    print(two_sum(test_nums, test_target))
