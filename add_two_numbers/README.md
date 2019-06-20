@@ -14,9 +14,10 @@
 
 ## 我的思路
 
-- Runtime: 84 ms, faster than 47.11% of Python3 online submissions for Add Two
+- Runtime: *84 ms*, faster than 47.11% of Python3 online submissions for Add Two
  Numbers.
-- Memory Usage: 13.3 MB, less than 33.94% of Python3 online submissions for Add Two Numbers.
+- Memory Usage: *13.3 MB*, less than 33.94% of Python3 online submissions for 
+Add Two Numbers.
 
 方法比较傻分了三步，代码就不贴在这来，有兴趣可以看看[add_two_numbers.py](add_two_numbers.py)
 
