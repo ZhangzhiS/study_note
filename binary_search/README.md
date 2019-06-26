@@ -50,4 +50,4 @@ def binary_search(target: list, num: int) -> int or None:
     return None
 ```
 
-> 建议自己画图或者但不调试看看查找过程。
+> 建议自己画图或者Debug调试看看查找过程。
