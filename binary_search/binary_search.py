@@ -4,12 +4,18 @@
 """
 
 
-def binary_search(target, num):
+def binary_search(target: list, num: int) -> int or None:
+    """
+    二分查找
+    :param target: 有序数组
+    :param num: 要查找的数字
+    :return: 要查找的数字所在的位置或者None
+    """
     low = 0
     high = len(target) - 1
     while low <= high:
         if num < target[low] or num > target[high]:
-            return -1
+            return None
         mid = int((low + high) / 2)
         guess = target[mid]
         if guess == num:
@@ -18,7 +24,7 @@ def binary_search(target, num):
             high = mid - 1
         else:
             low = mid + 1
-    return -1
+    return None
 
 
 if __name__ == '__main__':
