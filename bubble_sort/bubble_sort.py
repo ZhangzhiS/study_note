@@ -4,7 +4,7 @@
 """
 
 
-def bubble_sort(array):
+def bubble_sort(array: list) -> list:
     """
     冒泡排序
     冒泡排序要排序n个数，由于每遍历一趟只排好一个数字，
@@ -19,6 +19,7 @@ def bubble_sort(array):
             if array[j] > array[j+1]:
                 array[j], array[j+1] = array[j+1], array[j]
     print(array)
+    return array
 
 
 if __name__ == '__main__':
