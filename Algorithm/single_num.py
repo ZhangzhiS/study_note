@@ -16,7 +16,7 @@
 """
 
 
-def single_num(nums: list) ->int:
+def single_num(nums: list) -> int:
     a = 0
     for i in nums:
         a = a ^ i
